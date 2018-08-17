@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "DC";
+}
+<div class="jumbotron jumbotron-fluid" style="opacity:1.0; background-image: url(http://spoutly.com/wp-content/uploads/2018/07/dc-universe-streaming-service-logo.jpg)">
+    <div class="container">
+        <div class="container-fluid align-center" style="opacity:10; background-color:white">
+            <div class="row">
+                <div class="col-sm-8"><h2 class="text-center">@ViewBag.Title</h2></div>
+                <div class="col-md-4">
+                    <br />
+                    <button type="button" class="btn btn-outline btn-sm" data-toggle="modal" data-target="">
+                        <span class="glyphicon glyphicon-plus "></span> Adicionar Filme
+                    </button>
+                </div>
+                <div class="">
+
+                </div>
+                <div class="col-md-4">
+                    <br />
+                    <button type="button" class="btn btn-outline btn-sm" data-toggle="collapse" data-target="#filmesDc">
+                        <span class="glyphicon glyphicon-collapse-down "></span> Mostrar Filmes
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div id="filmesDc" class="collapse">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card table-bordered" style="width:300px; background-color:white">
+                        <img class="card-image-top" src="https://1079638729.rsc.cdn77.org/iphonegame_img/man_of_steel/real/1_man_of_steel.jpg" style="width:300px; ">
+                        <div class="card-body">
+                            <div class="card-header"><h5 class="card-title">Homem de Aço</h5></div><hr />
+                            <p class="card-text">
+                                Depois da recepitividade turbulenta de "Lanterna Verde", a DC em 2013 recomeça o seu universo com um filme do Superman.
+                            </p>
+                            <a href="#" class="btn btn-primary">Mais infomações sobre o filme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card table-bordered" style="width:300px; background-color:white">
+                        <img class="card-image-top" src="https://i2.wp.com/fourgeeks.com.br/site/wp-content/uploads/2016/03/batman-v-superman-cover.jpg?resize=696%2C387&ssl=1" style="width:300px;">
+                        <div class="card-body">
+                            <div class="card-header"><h5 class="card-title">Batman v Superman: A Origem da Justiça</h5></div><hr />
+                            <p class="card-text">
+                                Com o sucesso de "Man of Steel" a DC da continuidade ao filme, com um crossover entre um novo Batman e o Superman, a rivalidade foi ao longo do filme fomentada por Lex Luthor.
+                            </p>
+                            <a href="#" class="btn btn-primary">Mais informações sobre o filme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card table-bordered" style="width:300px; background-color:white">
+                        <img class="card-image-top" src="https://t6.rbxcdn.com/ae077c84da7c8794bbfe8845f2fbb177" style="width:300px;">
+                        <div class="card-body">
+                            <div class="card-header"><h5 class="card-title">Esquadrão Suicida</h5></div><hr />
+                            <p class="card-text">
+                                Com opiniões adversas sobre "Batman v Superman" a DC investe num grupo de vilões que faz missões sob comando do governo, missões essas que eles não fazem.
+                            </p>
+                            <a href="#" class="card-button btn btn-primary">Mais informações sobre o filme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

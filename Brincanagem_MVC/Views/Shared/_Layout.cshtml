@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Brincanagem MVC</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+</head>
+<body style="background-image: url(https://img.freepik.com/vetores-gratis/fundo-quadrinho-azul-com-linhas-e-meio-tom_1017-11432.jpg?size=338&ext=jpg)" img="no-repeat">
+
+    <nav class="navbar navbar-dark bg-primary navbar-fixed-top">
+        <div class="container ">
+            <button class="navbar-brand btn navbar-btn" style="height:50px;">
+                <a href="~/Home/Index"><span class="glyphicon glyphicon-home"> Inicio</span></a>
+            </button>
+            <p class="navbar-text">Veja nossas impressões sobre os filmes da: |</p>
+            <button class="btn navbar-btn" style="height:50px;">
+                <a href="~/Home/Contact"><span class="glyphicon glyphicon-film"> MARVEL</span></a>
+            </button>
+            <button class="btn navbar-btn" style="height:50px;">
+                <a href="~/Home/About"><span class="glyphicon glyphicon-film"> DC</span></a>
+            </button>
+            
+        </div>
+
+    </nav>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+
+<div class="container body-content" style="background-color: #1faddb">
+    @RenderBody()
+    <hr />
+    <footer class="page-footer front-small blue">
+        <div class="footer-copyright text-center py-3">
+            <p><span class="glyphicon glyphicon-copyright-mark"></span> - Todos os direitos reservados</p>
+        </div>
+    </footer>
+</div>
+
+</html>
